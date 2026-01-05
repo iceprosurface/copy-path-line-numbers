@@ -1,0 +1,51 @@
+{
+  "name": "copy-path-line-numbers",
+  "displayName": "Copy Path with Line Numbers",
+  "description": "Copy file path with line number range using Shift+Cmd+C",
+  "version": "1.0.0",
+  "publisher": "iceprosurface",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iceprosurface/copy-path-line-numbers"
+  },
+  "homepage": "https://github.com/iceprosurface/copy-path-line-numbers#readme",
+  "bugs": {
+    "url": "https://github.com/iceprosurface/copy-path-line-numbers/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyPathWithLines.copy",
+        "title": "Copy Path with Line Numbers"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "copyPathWithLines.copy",
+        "key": "shift+cmd+c",
+        "mac": "shift+cmd+c",
+        "win": "shift+ctrl+c",
+        "linux": "shift+ctrl+c",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x"
+  }
+}
