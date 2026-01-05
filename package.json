@@ -1,6 +1,6 @@
 {
   "name": "copy-path-line-numbers",
-  "displayName": "Copy Path with Line Numbers",
+  "displayName": "Quick Copy Path Lines",
   "description": "Copy file path with line number range using Shift+Cmd+C",
   "version": "1.0.0",
   "publisher": "iceprosurface",
